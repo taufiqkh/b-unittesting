@@ -97,7 +97,7 @@ public class Assertion{
             fail(test);
             bl.addResultArray(new String[]{test, "assertFalse", "fail"});
         }else{
-            bl.addResultArray(new String[]{test, "assertFalse", "true"});
+            bl.addResultArray(new String[]{test, "assertFalse", "pass"});
         }
     }
     
@@ -233,7 +233,7 @@ public class Assertion{
             fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertEquals", "fail"});
         }else{
-            bl.addResultArray(new String[]{test, "assertEquals", "true"});
+            bl.addResultArray(new String[]{test, "assertEquals", "pass"});
         }
     }
     
