@@ -25,8 +25,6 @@ package jmunit.framework.blackberry;
  * @author Brunno Silva
  * @since JMUnit 1.0
  */
-//public abstract class Assertion extends MIDlet{
-//public abstract class Assertion{
 public class Assertion{
     static UnitTestLogic bl = new UnitTestLogic();
     /**
@@ -894,7 +892,6 @@ public class Assertion{
     public static final void fail(String test) throws AssertionFailedException{
         System.out.println("\n" + test + " failed.");
         bl.addInfoString(test + " failed.");
-        //fail();
     }
     
     /**
@@ -911,7 +908,6 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
-        //fail();
     }
     
     /**
@@ -928,7 +924,6 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
-        //fail();
     }
     
     /**
@@ -945,7 +940,6 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
-        //fail();
     }
     
     /**
@@ -962,7 +956,6 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
-        //fail();
     }
     
     /**
@@ -979,7 +972,6 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
-        //fail();
     }
     
     /**
@@ -996,7 +988,6 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
-        //fail();
     }
     
     /**
@@ -1013,7 +1004,6 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
-        //fail();
     }
     
     /**
@@ -1030,7 +1020,6 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
-        //fail();
     }
     
     /**
@@ -1047,7 +1036,6 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
-        //fail();
     }
     
     /**
@@ -1064,7 +1052,6 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
-       // fail();
     }
     
     /**

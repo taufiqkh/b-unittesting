@@ -44,13 +44,11 @@ public class TestSuite extends Test {
      */
     public TestSuite() {
         super(0,"Default test suite");
-        //String prop=getAppProperty("JMUnitTestClasses");
         String prop="";
         String[] classes;
         
         if (prop!=null && !prop.equals("")) {
             classes=parseTestClassProperty(prop);
-            Object clazz;
             
             for (int i=0;i<classes.length;i++) {
                 try {

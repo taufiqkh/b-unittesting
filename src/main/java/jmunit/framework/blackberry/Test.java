@@ -18,8 +18,6 @@
 
 package jmunit.framework.blackberry;
 
-import javax.microedition.lcdui.Display;
-
 /**
  * The Test is a abstract class that has the main
  * implementation to create a executing test class

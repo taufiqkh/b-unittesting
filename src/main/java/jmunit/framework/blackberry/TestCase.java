@@ -69,8 +69,6 @@ public abstract class TestCase extends Test{
                 tearDown();
                 Result.addRun();
                 Result.setElapsedTime();
-                //screen.repaint();
-                //screen.invalidate();
             }
         }
     }
