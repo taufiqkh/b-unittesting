@@ -18,6 +18,8 @@
 
 package jmunit.framework.blackberry;
 
+import java.util.Vector;
+
 /**
  * The principal class in the framework.
  * All your test classes must extend this one.
@@ -30,6 +32,7 @@ package jmunit.framework.blackberry;
  */
 public abstract class TestCase extends Test{
     private int totalOfTests;
+    private final Vector testResults = new Vector();
     
     /**
      * The default constructor.
@@ -55,16 +58,20 @@ public abstract class TestCase extends Test{
      */
     public final void test(){
         for (int i = 0; i < totalOfTests; i++){
+            String testName = getClass().getName() + " test " + i;
             try{
                 setUp();
                 test(i);
+                testResults.addElement(new TestCaseResult(testName, true));
                 Result.addPass();
             }catch(Throwable throwable){
                 throwable.printStackTrace();
                 
                 if(!(throwable instanceof AssertionFailedException))	{
                     Result.addError();
+                    testResults.addElement(new TestCaseResult(testName, throwable));
                 }
+                testResults.addElement(new TestCaseResult(testName, throwable));
             }finally{
                 tearDown();
                 Result.addRun();
@@ -110,5 +117,9 @@ public abstract class TestCase extends Test{
      */
     public void tearDown(){
         
+    }
+    
+    public Vector getTestResults() {
+        return testResults;
     }
 }
