@@ -38,8 +38,8 @@ public class Assertion{
      */
     public static final void assertNull(String test, Object object) throws AssertionFailedException{
         if(object != null){
-            fail(test);
             bl.addResultArray(new String[]{test, "assertNull", "fail"});
+            fail(test);
         }else{
             bl.addResultArray(new String[]{test, "assertNull", "pass"});
         }
@@ -56,8 +56,8 @@ public class Assertion{
      */
     public static final void assertNotNull(String test, Object object) throws AssertionFailedException{
         if(object == null){
-            fail(test);
             bl.addResultArray(new String[]{test, "assertNotNull", "fail"});
+            fail(test);
         }else{
             bl.addResultArray(new String[]{test, "assertNotNull", "pass"});
         }
@@ -74,8 +74,8 @@ public class Assertion{
      */
     public static final void assertTrue(String test, boolean expression) throws AssertionFailedException{
         if(!expression){
-            fail(test);
             bl.addResultArray(new String[]{test, "assertTrue", "fail"});
+            fail(test);
         }else{
             bl.addResultArray(new String[]{test, "assertTrue", "pass"});
         }
@@ -92,8 +92,8 @@ public class Assertion{
      */
     public static final void assertFalse(String test, boolean expression) throws AssertionFailedException{
         if(expression){
-            fail(test);
             bl.addResultArray(new String[]{test, "assertFalse", "fail"});
+            fail(test);
         }else{
             bl.addResultArray(new String[]{test, "assertFalse", "pass"});
         }
@@ -130,8 +130,8 @@ public class Assertion{
      */
     public static final void assertNotSame(String test, Object expected, Object actual) throws AssertionFailedException{
         if(expected == actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertNotSame", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertNotSame", "pass"});
         }
@@ -152,8 +152,8 @@ public class Assertion{
     public static final void assertEquals(String test, Object expected, Object actual) throws AssertionFailedException{
         System.out.println("Assertion.assertEquals");
         if(!expected.equals(actual)){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertEquals", "pass"});
         }
@@ -170,8 +170,8 @@ public class Assertion{
      */
     public static final void assertNotEquals(String test, Object expected, Object actual) throws AssertionFailedException{
         if(expected.equals(actual)){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertNotEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertNotEquals", "pass"});
         }
@@ -190,8 +190,8 @@ public class Assertion{
     public static final void assertEquals(String test, String expected, String actual) throws AssertionFailedException{
         System.out.println("Assertion.assertEquals");
         if(!expected.equals(actual)){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertEquals", "pass"});
         }
@@ -228,8 +228,8 @@ public class Assertion{
      */
     public static final void assertEquals(String test, boolean expected, boolean actual) throws AssertionFailedException{
         if(expected != actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertEquals", "pass"});
         }
@@ -266,8 +266,8 @@ public class Assertion{
      */
     public static final void assertEquals(String test, char expected, char actual) throws AssertionFailedException{
         if(expected != actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertEquals", "pass"});
         }
@@ -285,8 +285,8 @@ public class Assertion{
      */
     public static final void assertNotEquals(String test, char expected, char actual) throws AssertionFailedException{
         if(expected == actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertNotEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertNotEquals", "pass"});
         }
@@ -304,8 +304,8 @@ public class Assertion{
      */
     public static final void assertEquals(String test, int expected, int actual) throws AssertionFailedException{
         if(expected != actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertEquals", "pass"});
         }
@@ -323,8 +323,8 @@ public class Assertion{
      */
     public static final void assertNotEquals(String test, int expected, int actual) throws AssertionFailedException{
         if(expected == actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertNotEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertNotEquals", "pass"});
         }
@@ -342,8 +342,8 @@ public class Assertion{
      */
     public static final void assertEquals(String test, byte expected, byte actual) throws AssertionFailedException{
         if(expected != actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertEquals", "pass"});
         }
@@ -361,8 +361,8 @@ public class Assertion{
      */
     public static final void assertNotEquals(String test, byte expected, byte actual) throws AssertionFailedException{
         if(expected == actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertNotEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertNotEquals", "pass"});
         }
@@ -380,8 +380,8 @@ public class Assertion{
      */
     public static final void assertEquals(String test, long expected, long actual) throws AssertionFailedException{
         if(expected != actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertEquals", "pass"});
         }
@@ -399,8 +399,8 @@ public class Assertion{
      */
     public static final void assertNotEquals(String test, long expected, long actual) throws AssertionFailedException{
         if(expected == actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertNotEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertNotEquals", "pass"});
         }
@@ -418,8 +418,8 @@ public class Assertion{
      */
     public static final void assertEquals(String test, short expected, short actual) throws AssertionFailedException{
         if(expected != actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertEquals", "pass"});
         }
@@ -437,8 +437,8 @@ public class Assertion{
      */
     public static final void assertNotEquals(String test, short expected, short actual) throws AssertionFailedException{
         if(expected == actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertNotEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertNotEquals", "pass"});
         }
@@ -456,8 +456,8 @@ public class Assertion{
      */
     public static final void assertEquals(String test, float expected, float actual) throws AssertionFailedException{
         if(expected != actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertEquals", "pass"});
         }
@@ -475,8 +475,8 @@ public class Assertion{
      */
     public static final void assertNotEquals(String test, float expected, float actual) throws AssertionFailedException{
         if(expected == actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertNotEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertNotEquals", "pass"});
         }
@@ -494,8 +494,8 @@ public class Assertion{
      */
     public static final void assertEquals(String test, double expected, double actual) throws AssertionFailedException{
         if(expected != actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertEquals", "pass"});
         }
@@ -513,8 +513,8 @@ public class Assertion{
      */
     public static final void assertNotEquals(String test, double expected, double actual) throws AssertionFailedException{
         if(expected == actual){
-            fail(test, expected, actual);
             bl.addResultArray(new String[]{test, "assertNotEquals", "fail"});
+            fail(test, expected, actual);
         }else{
             bl.addResultArray(new String[]{test, "assertNotEquals", "pass"});
         }
@@ -892,6 +892,7 @@ public class Assertion{
     public static final void fail(String test) throws AssertionFailedException{
         System.out.println("\n" + test + " failed.");
         bl.addInfoString(test + " failed.");
+        fail();
     }
     
     /**
@@ -908,6 +909,7 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
+        fail();
     }
     
     /**
@@ -924,6 +926,7 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
+        fail();
     }
     
     /**
@@ -940,6 +943,7 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
+        fail();
     }
     
     /**
@@ -956,6 +960,7 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
+        fail();
     }
     
     /**
@@ -972,6 +977,7 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
+        fail();
     }
     
     /**
@@ -988,6 +994,7 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
+        fail();
     }
     
     /**
@@ -1004,6 +1011,7 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
+        fail();
     }
     
     /**
@@ -1020,6 +1028,7 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
+        fail();
     }
     
     /**
@@ -1036,6 +1045,7 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
+        fail();
     }
     
     /**
@@ -1052,6 +1062,7 @@ public class Assertion{
         bl.addInfoString(test + " failed.");
         System.out.println("Expected " + expected + ", but was " + actual);
         bl.addInfoString(" - Expected " + expected + ", but was " + actual);
+        fail();
     }
     
     /**

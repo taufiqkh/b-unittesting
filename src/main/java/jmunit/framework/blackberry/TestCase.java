@@ -33,6 +33,7 @@ import java.util.Vector;
 public abstract class TestCase extends Test{
     private int totalOfTests;
     private final Vector testResults = new Vector();
+
     
     /**
      * The default constructor.
@@ -67,11 +68,12 @@ public abstract class TestCase extends Test{
             }catch(Throwable throwable){
                 throwable.printStackTrace();
                 
-                if(!(throwable instanceof AssertionFailedException))	{
+                if((throwable instanceof AssertionFailedException))	{
+                    testResults.addElement(new TestCaseResult(testName, (AssertionFailedException) throwable));
+                } else {
                     Result.addError();
                     testResults.addElement(new TestCaseResult(testName, throwable));
                 }
-                testResults.addElement(new TestCaseResult(testName, throwable));
             }finally{
                 tearDown();
                 Result.addRun();
